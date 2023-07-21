@@ -51,3 +51,20 @@ const theSlider = new Swiper('.thumb-big', {
         swiper: sliderThumb,
     }
 });
+
+// Tabbed Products
+const tabbedNav = new Swiper('.tnav', {
+    spaceBetween: 20,
+    slidesPerView: 6,
+    centeredSlides: true,
+    slidesPerGroup: false,    
+});
+
+const theTab = new Swiper('.tabbed-item', {
+    loop: true,
+    slidesPerView: 1,
+    autoHeight: true,
+    thumbs: {
+        swiper: tabbedNav,
+    }
+});
